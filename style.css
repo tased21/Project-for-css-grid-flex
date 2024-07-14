@@ -165,10 +165,7 @@ a{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
-    .player{
-        justify-content: center;
-        align-items: center;
-    }
+   
     .legend{
         flex-direction: column;
     }
@@ -184,10 +181,7 @@ a{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-    .player{
-        justify-content: center;
-        align-items: center;
-    }
+    
     .legend{
         flex-direction: column;
     }
