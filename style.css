@@ -80,7 +80,34 @@ a{
     margin-right: 20px;
     cursor: pointer;
 }
+.smaller-links{
+    display: none;
+}
+.smaller-links ul{
+    display: flex;
+    list-style: none;
+}
+.smaller-links ul li{
+   position: relative;
+}
+.dropdown{
+    display: none;
+}
 
+.smaller-links ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    background-color: #1b0677;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    margin-bottom: 10px;
+}
 /* ----------Current Players ----------- */
 .players{
     display: grid;
@@ -169,6 +196,12 @@ a{
     .legend{
         flex-direction: column;
     }
+    .links{
+        display: none;
+    }
+    .smaller-links{
+        display: block;
+    }
 }
 @media screen and (min-width:669px) and (max-width:992px) {
     .container{
@@ -184,5 +217,11 @@ a{
     
     .legend{
         flex-direction: column;
+    }
+    .links{
+        display: none;
+    }
+    .smaller-links{
+        display: block;
     }
 }
